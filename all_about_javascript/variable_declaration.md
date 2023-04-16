@@ -122,4 +122,35 @@ console.log(x + y); // undefinedA
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var
 
 
+## Let
 
+```js
+let x = 1;
+
+if (x === 1) {
+  let x = 2;
+
+  console.log(x);
+  // Expected output: 2
+}
+
+console.log(x);
+// Expected output: 1
+
+```
+
+let allows you to declare variables that are limited to the scope of a block statement, or expression on which it is used, unlike the var keyword, which declares a variable globally, or locally to an entire function regardless of block scope.
+
+let declarations are commonly regarded as non-hoisted.
+
+
+```js
+var x = "global";
+let y = "global";
+console.log(this.x); // "global"
+console.log(this.y); // undefined
+
+
+```
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let
